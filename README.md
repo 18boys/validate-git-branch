@@ -1,6 +1,6 @@
 # validate-git-branch"
-Simple git branch name validate
 git 分支校验
+Simple git branch name validate
 
 ## Installation 安装
 
@@ -26,10 +26,13 @@ npm install validate-git-branch --save-dev
 ```
 
 # Note  配置说明
+```
 pattern: 分支需要满足的正则表达
 ignorePattern: 分支如果满足此正则,就不受 pattern的影响
 helpMessage: 不满足 pattern的时候,错误提示语
 justWarnOnfail: 不满足校验的时候还是可以提交 仅仅 warn提示错误
+```
+
 
 ## License 证书
 
