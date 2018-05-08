@@ -1,0 +1,30 @@
+{
+  "name": "validate-git-branch",
+  "version": "0.0.1",
+  "description": "validate git branch name ",
+  "scripts": {
+    "postinstall": "node ./lib/createHook.js pre-push "
+  },
+  "bin": {
+    "validate-git-branch": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:18boys/validate-git-branch.git"
+  },
+  "keywords": [
+    "branch",
+    "name",
+    "git",
+    "validate"
+  ],
+  "author": "18boys",
+  "license": "ISC",
+  "bugs": {
+    "url": "git@github.com:18boys/validate-git-branch.git/issues"
+  },
+  "homepage": "git@github.com:18boys/validate-git-branch.git#readme",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  }
+}
