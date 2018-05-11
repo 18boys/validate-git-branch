@@ -3,10 +3,11 @@
   "version": "0.0.3",
   "description": "validate git branch name ",
   "scripts": {
-    "postinstall": "node ./lib/createHook.js pre-push "
+    "postinstall": "node ./lib/createHook.js pre-push ",
+    "prepack": "babel bin -d dist "
   },
   "bin": {
-    "validate-git-branch": "./bin/index.js"
+    "validate-git-branch": "./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,9 @@
   "homepage": "git@github.com:18boys/validate-git-branch.git#readme",
   "dependencies": {
     "chalk": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
