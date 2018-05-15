@@ -51,20 +51,20 @@ function excute() {
   const { pattern, helpMessage, ignorePattern, justWarnOnfail } = getConfig();
   // 校验
   if (ignorePattern && new RegExp(ignorePattern).test(branchName)) {
-    log('符合分支名称校验的例外规则', 'info');
+    log(branchName+'符合分支名称校验的例外规则', 'info');
     return;
   }
   const targetPattern = new RegExp(pattern);
   if (!targetPattern.test(branchName)) {
 
     if (!justWarnOnfail) {
-      log(helpMessage, 'error');
+      log(branchName+helpMessage, 'error');
       process.exit(-1);
     }
-    log(helpMessage, 'warn');
+    log(branchName+helpMessage, 'warn');
     return;
   }
-  log('分支名称校验通过', 'info');
+  log(branchName+'分支名称校验通过', 'info');
 
 }
 
