@@ -9,7 +9,7 @@ const branchName = execSync('git symbolic-ref --short -q HEAD').toString().trim(
 
 function getConfig() {
   // 默认值
-  const defaultPattern = "^20\\\\d{2}(10|11|12|(0\\\\d))(((0|1)\\\\d)|(30|31))-\\S";
+  const defaultPattern = "^20\\\\d{2}(10|11|12|(0\\\\d))(((0|1|2)\\\\d)|(30|31))-\\S";
   const defaultNote = "分支名字格式无效,有效的格式 日期+描述,如 20180512-add-dialog";
 
   const packageFolder = path.resolve(workspaceRoot, 'package.json');
