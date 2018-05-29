@@ -1,6 +1,6 @@
 {
   "name": "validate-git-branch",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "validate git branch name ",
   "scripts": {
     "postinstall": "node ./lib/createHook.js pre-push ",
