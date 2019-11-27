@@ -5,7 +5,8 @@ Simple git branch name validate
 ## Installation 安装
 
 ```
-#建议使用--save-dev 来安装devDependence 下,同时注意在先线上打包的安装的时候npm install 加上--production的参数来避免在线上打包的时候也生效
+#建议使用--save-dev 来安装devDependence 下
+#同时注意在先线上打包的安装的时候npm install 加上--production的参数来避免在线上打包的时候也生效
 #如果因为某些原因不能加--prodution 参数,那么也可以加上disabledBranchValidate=true的环境变量来使此校验无效,详情参见 #Note
 npm install validate-git-branch --save-dev
 
